@@ -1,0 +1,37 @@
+Zadaniem projektu będzie odwzorowanie popularnej gry 
+
+planszowej o nazwie MEMO. Celem gry jest odsłonięcie 
+
+wszystkich par znajdujących się na planszy w jak 
+
+najkrótszym czasie i przy jak najmniejszej ilości 
+
+pomyłek. Dostępne będą dwa poziomy trudności. Plansza 
+
+na poziomie łatwym będzie zawierać 10 par natomiast 
+
+plansza na poziomie trudnym będzie zawierać 20 par. 
+
+Będą występować dwa tryby rozgywki : gra jednoosobowa 
+
+oraz gra dwuosobowa. W przypadku gry jednoosobowej 
+
+gracz będzie musiał podać swój nick oraz wybrać poziom 
+
+trudności. W przypadku gry dwuosobowej obaj gracze będą 
+
+musieli podać swoje nicki a poziom trudności będzie 
+
+wybierany wspólnie. Po zakończeniu rozgrywki będzie 
+
+możliwość powrócenia do menu głownego. W menu głównym, 
+
+oprócz dwóch trybów rozgrywki, będzie się również 
+
+znajdować pozycja "Opcje i zasady gry". Po jej 
+
+kliknięciu oczom użytkownika ukażą się zasady gry oraz 
+
+będzie on miał ograniczoną możliwość zmiany wyglądu 
+
+okienka (np. zmiana koloru tła).
