@@ -1,0 +1,39 @@
+﻿<Window x:Class="WpfApplication3.DifficultyLevelWindow" WindowStartupLocation="CenterScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication3"
+        mc:Ignorable="d"
+        Title="Memo" Height="390" Width="681">
+    <Grid>
+        <StackPanel Margin="142,22,142,10" >
+            <Border BorderBrush="Aqua" BorderThickness="2" Margin="5,5,5,5">
+                <StackPanel>
+                <TextBlock Margin="10" FontSize="20" FontWeight="Bold" Height="30" HorizontalAlignment="Left">Wybierz poziom trudności</TextBlock>
+            <RadioButton x:Name="latwy" Content="Łatwy (10 par)" Margin="5"/>
+            <RadioButton x:Name="trudny" Content="Trudny (20 par)" Margin="5"/>
+            </StackPanel>
+            </Border>
+            <Border BorderBrush="Aqua" BorderThickness="2" Margin="5,5,5,5">
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock x:Name="tekstPierwszegoGracza" Margin="15,0,0,0" FontSize="17" FontWeight="Bold" Height="25" HorizontalAlignment="Left"><Run Text="Wpisz imie gracza I"/></TextBlock>
+                        <TextBlock x:Name="tekstDrugiegoGracza" Margin="20,0,0,0" FontSize="17" FontWeight="Bold" Height="25" HorizontalAlignment="Right" RenderTransformOrigin="0.836,0.634" Width="163"><Run Text="Wpisz imie gracza II"/></TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="0,0,10,0" Height="54">
+                        <TextBox x:Name="imie" Height="23"  TextWrapping="Wrap" Margin="10,0,0,0" Width="169"/>
+                        <TextBox x:Name="imieDrugiegoGracza" Height="23"  TextWrapping="Wrap" Margin="10,0,0,0" Width="169"/>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+            <Button x:Name="play" Content="Graj" Width="349" Margin="10,0,0,0" Click="play_Click" HorizontalAlignment="Left"/>
+            <StackPanel Orientation="Horizontal" Height="105">
+                <TextBox x:Name="warning" Foreground="Red" FontWeight="Bold" TextWrapping="Wrap" Margin="18,19,0,0" IsReadOnly="True" BorderThickness="0" Width="163"/>
+                <TextBox x:Name="warningGraczaDrugiego"  Foreground="Red" FontWeight="Bold" TextWrapping="Wrap" Margin="18,19,0,0" IsReadOnly="True" BorderThickness="0" Width="163"/>
+
+            </StackPanel>
+
+        </StackPanel>
+    </Grid>
+</Window>

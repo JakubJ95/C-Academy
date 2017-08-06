@@ -1,0 +1,38 @@
+﻿<Window x:Class="WpfApplication3.OptionsWindow" WindowStartupLocation="CenterScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication3"
+        mc:Ignorable="d"
+        Title="Memo" Height="370.502" Width="681.695">
+    <Grid>
+        <StackPanel  VerticalAlignment="Center" HorizontalAlignment="Center" Height="355" Margin="98,21,100,-21" Width="476">
+            <Border BorderThickness="2" BorderBrush="Aqua" Margin="5,12,5,0">
+                <StackPanel>
+                    <Label x:Name="label" Content="OPCJE" HorizontalContentAlignment="Center" FontWeight="Heavy" Foreground="Blue"  FontFamily="Times New Roman" FontSize="30" HorizontalAlignment="Center" Height="38" Width="344" Margin="66,0"/>
+                    <CheckBox x:Name="checkBox" Content="Efekty dźwiękowe" Margin="10,5,0,0" IsChecked="true"/>
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,5">
+                        <Label x:Name="labe2" Content="Kolor tła" Margin="10,0,0,0" />
+                        <ComboBox x:Name="comboBox" Margin="10,0,223,0" SelectedValuePath="Content">
+                            <ComboBoxItem IsSelected="true">Biały</ComboBoxItem>
+                            <ComboBoxItem>Niebieski</ComboBoxItem>
+                            <ComboBoxItem>Zielony</ComboBoxItem>
+                            <ComboBoxItem>Żółty</ComboBoxItem>
+                            <ComboBoxItem>Różowy</ComboBoxItem>
+                        </ComboBox>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+            <Border BorderThickness="2" BorderBrush="Aqua" Margin="5,5,5,0">
+                <StackPanel>
+                    <Label x:Name="zasady" Content="ZASADY GRY" HorizontalContentAlignment="Center" FontWeight="Heavy" Foreground="Blue"  FontFamily="Times New Roman" FontSize="30" HorizontalAlignment="Center" Height="41" Width="344" Margin="66,0"/>
+                    <TextBlock x:Name="jedengracz" TextAlignment="Justify" Margin="10,10,10,0" TextWrapping="Wrap"><Underline>Tryb jednoosobowy</Underline> - zadaniem gracza jest odkrycie wszystkich par planszy w jak najkrótszym czasie. Czas jest zatrzymywany po wybraniu dwóch przycisków. Po trzecim kliknięciu obrazki znikają a czas jest wznawiany.</TextBlock>
+                    <TextBlock x:Name="dwochgraczy" TextAlignment="Justify" Margin="10,10,10,0" TextWrapping="Wrap" Height="75"><Underline>Tryb wieloosobowy</Underline> - Wszystkie reguły z trybu dla jednego gracza nadal obowiązują. Rozgrywkę wygrywa gracz posiadający na jej końcu większą liczbę par. Jeżeli liczba par obu graczy jest identyczna to wygrywa gracz, który ukończył rozgrywkę w krótszym czasie. Jeżeli czas również jest identyczny to następuje remis.</TextBlock>
+                </StackPanel>
+            </Border>
+            <Button x:Name="button" Content="Zapisz i wróć do menu" Margin="10,5,10,0" Click="button_Click"  HorizontalAlignment="Center" Width="456"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
